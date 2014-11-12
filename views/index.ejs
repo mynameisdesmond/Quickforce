@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class = "centered">
+    <form method="post" action="request">
+    	<h1> Welcome to Quickforce </h1>
+  		<p>
+    		<label>Name</label>
+    		<input type="text" name="name">
+  		</p>
+  		<p>
+    		<label>Address From</label>
+    		<textarea type="text" name="fromAddress"> </textarea>
+  		</p>
+  		<p>
+    		<label>Address To</label>
+    		<textarea type="text" name="toAddress"> </textarea>
+  		</p>
+  		<p>
+    		<label>Time</label>
+    		<input type="text" name="time">
+  		</p>
+  		<p>
+    		<input type="submit" value="Reqeust a delivery">
+  		</p>
+	   </form>
+   </div>
+  </body>
+</html>
