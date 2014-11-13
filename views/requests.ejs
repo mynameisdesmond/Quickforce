@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Requests </h1>
+
+<div>
+<table style="width:100%">
+  <tr>
+    <td>Name</td>
+    <td>From Address</td>		
+    <td>To Address</td>
+    <td>Time <td>
+  </tr>
+  <% for(var i = 0; i < requests.length; i++){ %>
+  <tr>
+    <td> <%= requests[i].name%> </td>
+    <td> <%= requests[i].address_from%> </td>
+    <td> <%= requests[i].address_to%> </td>
+    <td> <%= requests[i].time%> </td>
+  </tr>
+  <%}%>
+</table>
+</div>
+
+<div>
+  <br>
+  <br>
+  <form action="clearall" method="post">
+    <input type="submit" value="Clear all">
+<form>
+</div>
+
+<div>
+  <br>
+  <a href="logout"> Log out </a></div>
+
+</body>
+</html>

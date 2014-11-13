@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var requestSchema = mongoose.Schema({
-	name; String,
+	name: String,
 	address_from: String,
 	address_to: String,
 	time: String
